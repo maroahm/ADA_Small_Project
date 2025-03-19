@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file />
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>B:\college\ada\week4\src\array_list.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\GNAT\2021\bin\src\queue_pack.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 4" line=" 3" >
+      <vfs_project>B:\college\ada\MidtermAssignment\midtermassignment.gpr</vfs_project>
+      <vfs_file>B:\college\ada\MidtermAssignment\src\user.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

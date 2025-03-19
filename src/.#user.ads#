@@ -1,0 +1,23 @@
+with Ada.Strings.Unbounded;
+use Ada.Strings.Unbounded;
+
+package User is
+   type user is private;
+   
+   procedure create_user(U : in out user; Email, Name, Surname: String; Age: Natural);
+   function GetEmail(U: user) return String;
+   function GetName(U: user) return String;
+   function GetSurname(U: user) return String;
+   function GetAge(U:user) return Natural;
+   function JsonData(U: user) return String;
+   
+   
+         
+   
+private 
+   type user is record
+      Email : Unbounded_String;
+      Name: Unbounded_String;
+      Surname: Unbounded_String;
+      Age: Natural;
+end User;
