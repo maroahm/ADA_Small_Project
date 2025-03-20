@@ -1,0 +1,20 @@
+generic
+   type Elem is private;
+   type Key is (<>); 
+   type Arr is array(Natural range <>) of Elem;
+   with function Condition(E:Elem; K:Key) return Boolean; 
+
+package DataBase is
+
+   type database_type(Max: Natural) is limited private;
+   procedure Insert_Elem(D: in out database_type; E: Elem);
+   procedure Get_Elem(D: database_type; K: Key; E: out Elem);
+   procedure Update_Elem(D: database_type; K: Key; E: out Elem);
+   procedure Delete_Elem(D: in out database_type; K:key; E: Elem);
+private
+   type database_type(Max: Natural) is record
+      Data: Arr(0..Max);
+      Size : Natural := 0;
+   end record;
+   
+end DataBase;
