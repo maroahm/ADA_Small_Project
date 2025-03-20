@@ -1,0 +1,110 @@
+V "GNAT Lib v2021"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U main%b		main.adb		8090ed3b NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W message%s		message.adb		message.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+W user%s		user.adb		user.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-charac.ads		20210520051128 2d3ec45b ada.characters%s
+D a-chlat1.ads		20210520051128 66457d31 ada.characters.latin_1%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-finali.ads		20210520051128 bf4f806b ada.finalization%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-strmap.ads		20210520051130 5a88892a ada.strings.maps%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-strunb.ads		20210520051130 03325227 ada.strings.unbounded%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D main.adb		20250320005352 959fa1a1 main%b
+D message.ads		20250320004944 a6fb479d message%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-atocou.ads		20210520051132 b45c2d8d system.atomic_counters%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-finroo.ads		20210520051132 4ff27390 system.finalization_root%s
+D s-memory.ads		20210520051134 597d6634 system.memory%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stalib.adb		20210520051134 977290bf system.standard_library%b
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-stratt.ads		20210520051134 7bdda3fa system.stream_attributes%s
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+D user.ads		20250320002442 1d00de6a user%s
+G a e
+G c Z b b [main standard 3 11 none]
+G r s user_type [main standard 3 11 none] [user_typeIP user 18 9 none]
+G r l user_type [main standard 3 11 none] [user_typeDI user 18 9 none]
+G r k user_type [main standard 3 11 none] [user_typeDF user 18 9 none]
+G r s message_type [main standard 3 11 none] [message_typeIP message 17 9 none]
+G r l message_type [main standard 3 11 none] [message_typeDI message 17 9 none]
+G r k message_type [main standard 3 11 none] [message_typeDF message 17 9 none]
+G r c none [main standard 3 11 none] [create_user user 7 14 none]
+G r c none [main standard 3 11 none] [create_message message 9 14 none]
+G r c none [main standard 3 11 none] [jsonmessage message 14 13 none]
+G r c none [main standard 3 11 none] [getemail user 8 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 18|1r6 2r5
+X 14 a-textio.ads
+58K13*Text_IO 725e16 18|1w10 2r9
+506U14*Put_Line 18|15s4 16s4 18s4
+X 18 main.adb
+3U11*Main 3b11 19l5 19t9
+6r4 U{41|5R9} 11m16 14r42 16r22
+7r4 U2{41|5R9} 13m16 14r45
+8r4 M{19|7R9} 14m19 15r25
+X 19 message.ads
+5K9*message 18|1w24 5r14 19|23e12
+7R9*message_type 18|8r7 19|22e14
+9U14*Create_Message 18|14s4
+14V13*JsonMessage{string} 18|15s13
+X 20 system.ads
+67M9*Address
+X 26 s-memory.ads
+53V13*Alloc{20|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{20|67M9} 105i<c,__gnat_realloc>22
+X 33 s-stalib.adb
+89U14 Break_Start 90i<c,__gnat_break_start>22
+X 41 user.ads
+4K9*User 18|1w19 5r8 41|24e9
+5R9*user_type 18|6r8 7r9 41|23e14
+7U14*create_user 18|11s4 13s4
+8V13*GetEmail{string} 18|16s13
+

@@ -1,0 +1,131 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U user%b		user.adb		3a412aed NE OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.strings%s		a-string.ads		a-string.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+U user%s		user.ads		1e328c4d EE NE OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.strings%s		a-string.ads		a-string.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z system%s		system.ads		system.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-charac.ads		20210520051128 2d3ec45b ada.characters%s
+D a-chlat1.ads		20210520051128 66457d31 ada.characters.latin_1%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-finali.ads		20210520051128 bf4f806b ada.finalization%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-strmap.ads		20210520051130 5a88892a ada.strings.maps%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-strunb.ads		20210520051130 03325227 ada.strings.unbounded%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-atocou.ads		20210520051132 b45c2d8d system.atomic_counters%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-finroo.ads		20210520051132 4ff27390 system.finalization_root%s
+D s-imagei.ads		20210520051134 0d3f86a7 system.image_i%s
+D s-imgint.ads		20210520051134 bdb6f5ec system.img_int%s
+D s-memory.ads		20210520051134 597d6634 system.memory%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stalib.adb		20210520051134 977290bf system.standard_library%b
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-stratt.ads		20210520051134 7bdda3fa system.stream_attributes%s
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+D user.ads		20250320002442 1d00de6a user%s
+D user.adb		20250320005544 2473a6a0 user%b
+G a e
+G c Z s b [create_user user 7 14 none]
+G c Z s b [getemail user 8 13 none]
+G c Z s b [getname user 9 13 none]
+G c Z s b [getsurname user 10 13 none]
+G c Z s b [getage user 11 13 none]
+G c Z s b [jsondata user 12 13 none]
+G c Z s s [user_typeDI user 18 9 none]
+G c Z s s [user_typeDA user 18 9 none]
+G c Z s s [user_typeDF user 18 9 none]
+G c Z s s [user_typeIP user 18 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 35|1r6 2r5 36|1r6 2r5
+X 7 a-string.ads
+16K13*Strings 35e16 35|1r10 2r9 36|1r10 2r9
+X 10 a-strunb.ads
+83K21*Unbounded 765e26 35|1w18 2r17 36|1w18 2r17
+88R9*Unbounded_String<5|43R9> 744e15 35|19r15 20r13 21r16 36|51r17
+104V13*To_Unbounded_String{88R9} 36|8s18 9s17 10s19 54s49
+117V13*To_String{string} 36|18s17 28s17 37s17 56s14
+152V14*"&"{88R9} 36|53s53 54s23 54s47
+160V14*"&"{88R9} 36|53s40 53s62 54s35 54s91
+168V14*"&"{88R9} 36|53s30
+245V14*"="{boolean} 36|15s18 25s17 34s20
+X 15 system.ads
+67M9*Address
+X 21 s-memory.ads
+53V13*Alloc{15|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{15|67M9} 105i<c,__gnat_realloc>22
+X 28 s-stalib.adb
+89U14 Break_Start 90i<c,__gnat_break_start>22
+X 35 user.ads
+4K9*User 18E9 24l5 24e9 36|4b14 59l5 59t9
+5R9*user_type 7r34 8r25 9r24 10r27 11r22 12r25 18c9 23e14 36|6r34 13r25 23r24
+. 32r27 41r22 50r25
+7U14*create_user 7<26 7>45 7>52 7>58 7>75 36|6b14 12l8 12t19
+7r26 U{5R9} 36|6b26 8m7 9m7 10m7 11m7
+7a45 Email{string} 36|6b45 8r38
+7a52 Name{string} 36|6b52 9r37
+7a58 Surname{string} 36|6b58 10r39
+7i75 Age{natural} 36|6b75 11r16
+8V13*GetEmail{string} 8>22 36|13b13 21l8 21t16
+8r22 U{5R9} 36|13b22 15r10 18r27
+9V13*GetName{string} 9>21 36|23b13 30l8 30t15
+9r21 U{5R9} 36|23b21 25r10 28r27
+10V13*GetSurname{string} 10>24 36|32b13 39l8 39t18
+10r24 U{5R9} 36|32b24 34r10 37r27
+11V13*GetAge{natural} 11>20 36|41b13 48l8 48t14
+11r20 U{5R9} 36|41b20 43r10 46r17
+12V13*JsonData{string} 12>22 36|50b13 57l8 57t16
+12r22 U{5R9} 36|50b22 53r32 53r55 54r25 54r83
+19r7*Email{10|88R9} 36|8m9 15r12 18r29 53r34
+20r7*Name{10|88R9} 36|9m9 25r12 28r29 53r57
+21r7*Surname{10|88R9} 36|10m9 34r12 37r29 54r27
+22i7*Age{natural} 36|11m9 43r12 46r19 54r85
+X 36 user.adb
+51r7 JsonStr{10|88R9} 53m7 56r24
+

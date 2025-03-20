@@ -1,0 +1,21 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+B:\college\ada\MidtermAssignment\midtermassignment.gpr
+20250319212440 cf1b79017bd37b490ca54be4911a7be7
+[BOUND OBJECT FILES]
+B:\college\ada\MidtermAssignment\obj\user.o
+B:\college\ada\MidtermAssignment\obj\message.o
+B:\college\ada\MidtermAssignment\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LB:\college\ada\MidtermAssignment\obj\
+-LB:\college\ada\MidtermAssignment\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000
