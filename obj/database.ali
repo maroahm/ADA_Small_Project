@@ -1,0 +1,57 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U database%b		database.adb		8ba0e20b NE OO PK GE
+
+U database%s		database.ads		b109a92c BN EE NE OO PK GE
+
+D database.ads		20250322144802 b109a92c database%s
+D database.adb		20250322150606 3aa94b27 database%b
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+G c Z s b [database standard 7 9 none]
+X 1 database.ads
+2+9 Elem 4r43 5r30 11r54 12r56 13r62 2|4r55 14r56 25r62
+3+9 Key 5r38 12r44 13r54 14r53 2|14r44 25r54 36r53
+4A9 Arr(2+9)<integer> 17r13
+5V18 Condition{boolean} 5>28 5>36 2|18s13 29s13 40s13
+5*28 E{2+9}
+5*36 K{3+9}
+7k9*DataBase 2z9 3z9 4z9 5z18 16E9 21l5 21e13 2|1b14 50l5 50t13
+9R9*database_type 9d23 11r36 12r26 13r36 14r36 16c9 19e14 2|4r37 14r26 25r36
+. 36r36
+9i23 Max{natural} 16r23 17r20
+11U14*Insert_Elem 11=26 11>51 11<60 2|4b14 12l8 12t19
+11r26 D{9R9} 2|4b26 7r10 7r19 8m10 8r17 9m10 9r19
+11*51 E{2+9} 2|4b52 8r28
+11b60 success{boolean} 2|4b61 6m7 10m10
+12U14*Get_Elem 12>23 12>41 12<49 12<62 2|14b14 23l8 23t16
+12r23 D{9R9} 2|14b23 17r16 18r23 20r17
+12*41 K{3+9} 2|14b41 18r34
+12*49 E{2+9} 2|14b49 20m13
+12b62 success{boolean} 2|14b62 16m7 19m13
+13U14*Update_Elem 13=26 13>51 13>59 13<68 2|25b14 34l8 34t19
+13r26 D{9R9} 2|25b26 28r16 29r23 31m13
+13*51 K{3+9} 2|25b51 29r34
+13*59 E{2+9} 2|25b59 31r26
+13b68 success{boolean} 2|25b68 27m7 30m13
+14U14*Delete_Elem 14=26 14>51 14<58 2|36b14 48l8 48t19
+14r26 D{9R9} 2|36b26 39r16 40r23 42r27 43m16 43r29 45m13 45r23
+14*51 K{3+9} 2|36b51 40r34
+14b58 success{boolean} 2|36b58 38m7 41m13
+17a7 Data{4A9} 2|7r21 8m12 17r18 18r25 20r19 28r18 29r25 31m15 39r18 40r25
+. 43m18 43r31
+18i7 Size{natural} 2|7r12 8r19 9m12 9r21 42r29 45m15 45r25
+X 2 database.adb
+17i11 I{integer} 18r30 20r24
+28i11 I{integer} 29r30 31r20
+39i11 I{integer} 40r30 42r22
+42i17 J{integer} 43r23 43r36
+

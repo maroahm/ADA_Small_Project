@@ -4,8 +4,10 @@ b__main.o
 B:\college\ada\MidtermAssignment\midtermassignment.gpr
 20250319212440 cf1b79017bd37b490ca54be4911a7be7
 [BOUND OBJECT FILES]
-B:\college\ada\MidtermAssignment\obj\user.o
-B:\college\ada\MidtermAssignment\obj\message.o
+B:\college\ada\MidtermAssignment\obj\database.o
+B:\college\ada\MidtermAssignment\obj\controller.o
+B:\college\ada\MidtermAssignment\obj\users.o
+B:\college\ada\MidtermAssignment\obj\messages.o
 B:\college\ada\MidtermAssignment\obj\main.o
 [GENERATED SOURCE FILES]
 b__main.ads

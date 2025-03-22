@@ -6,27 +6,49 @@ A -march=x86-64
 P SS ZX
 
 RN
+RV NO_CALENDAR
+RV NO_DELAY
 RV NO_EXCEPTION_HANDLERS
 RV NO_EXCEPTION_PROPAGATION
 RV NO_EXCEPTIONS
 RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
 RV NO_NESTED_FINALIZATION
 RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
 RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
 
-U main%b		main.adb		8090ed3b NE OO SU
+U main%b		main.adb		6afc5474 NE OO SU
 W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W ada.calendar.formatting%s  a-calfor.adb	a-calfor.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.fixed%s	a-strfix.adb		a-strfix.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
-W message%s		message.adb		message.ali
+W controller%s		controller.adb		controller.ali
+Z database%s		database.adb		database.ali
+W messages%s		messages.adb		messages.ali
+Z system%s		system.ads		system.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 Z system.soft_links%s	s-soflin.adb		s-soflin.ali
 Z system.standard_library%s  s-stalib.adb	s-stalib.ali
-W user%s		user.adb		user.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W users%s		users.adb		users.ali
 
 D ada.ads		20210520051132 76789da1 ada%s
+D a-calend.ads		20210520051128 474d9720 ada.calendar%s
+D a-calfor.ads		20210520051128 0f4707d1 ada.calendar.formatting%s
+D a-catizo.ads		20210520051128 eaa56756 ada.calendar.time_zones%s
 D a-charac.ads		20210520051128 2d3ec45b ada.characters%s
 D a-chlat1.ads		20210520051128 66457d31 ada.characters.latin_1%s
 D a-except.ads		20210520051128 946f3014 ada.exceptions%s
@@ -34,6 +56,7 @@ D a-finali.ads		20210520051128 bf4f806b ada.finalization%s
 D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
 D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
 D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-strfix.ads		20210520051130 aeacf44c ada.strings.fixed%s
 D a-strmap.ads		20210520051130 5a88892a ada.strings.maps%s
 D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
 D a-strunb.ads		20210520051130 03325227 ada.strings.unbounded%s
@@ -41,16 +64,25 @@ D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
 D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
 D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D controller.ads	20250322145826 eab2540e controller%s
+D controller.adb	20250322150518 b1f105a5 controller%b
+D database.ads		20250322144802 b109a92c database%s
+D database.adb		20250322150606 3aa94b27 database%b
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D main.adb		20250320005352 959fa1a1 main%b
-D message.ads		20250320004944 a6fb479d message%s
+D main.adb		20250322150002 92397de5 main%b
+D messages.ads		20250322150420 d5e54aa9 messages%s
 D system.ads		20210520051136 2ffa5114 system%s
 D s-atocou.ads		20210520051132 b45c2d8d system.atomic_counters%s
+D s-conca2.ads		20210520051132 02a0d7d0 system.concat_2%s
+D s-conca3.ads		20210520051132 0b705ca5 system.concat_3%s
 D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
 D s-exctab.ads		20210520051132 54135002 system.exception_table%s
 D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-finmas.ads		20210520051132 1ab4dba8 system.finalization_masters%s
 D s-finroo.ads		20210520051132 4ff27390 system.finalization_root%s
+D s-imagei.ads		20210520051134 0d3f86a7 system.image_i%s
+D s-imgint.ads		20210520051134 bdb6f5ec system.img_int%s
 D s-memory.ads		20210520051134 597d6634 system.memory%s
 D s-parame.ads		20210520051134 4752c4cb system.parameters%s
 D s-putima.ads		20210520051134 4e095881 system.put_images%s
@@ -61,50 +93,115 @@ D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
 D s-stalib.adb		20210520051134 977290bf system.standard_library%b
 D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
 D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20210520051134 e9fa2dd8 system.storage_pools%s
 D s-stratt.ads		20210520051134 7bdda3fa system.stream_attributes%s
 D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
 D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
 D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
 D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
-D user.ads		20250320002442 1d00de6a user%s
+D users.ads		20250322135518 8fc086e6 users%s
 G a e
-G c Z b b [main standard 3 11 none]
-G r s user_type [main standard 3 11 none] [user_typeIP user 18 9 none]
-G r l user_type [main standard 3 11 none] [user_typeDI user 18 9 none]
-G r k user_type [main standard 3 11 none] [user_typeDF user 18 9 none]
-G r s message_type [main standard 3 11 none] [message_typeIP message 17 9 none]
-G r l message_type [main standard 3 11 none] [message_typeDI message 17 9 none]
-G r k message_type [main standard 3 11 none] [message_typeDF message 17 9 none]
-G r c none [main standard 3 11 none] [create_user user 7 14 none]
-G r c none [main standard 3 11 none] [create_message message 9 14 none]
-G r c none [main standard 3 11 none] [jsonmessage message 14 13 none]
-G r c none [main standard 3 11 none] [getemail user 8 13 none]
+G c Z b b [main standard 14 11 none]
+G r i none [main standard 14 11 none] [database standard 7 9 none]
+G r i none [main standard 14 11 none] [controller standard 9 9 none]
+G r s user [main standard 14 11 none] [userIP users 18 9 none]
+G r l user [main standard 14 11 none] [userDI users 18 9 none]
+G r k user [main standard 14 11 none] [userDF users 18 9 none]
+G r s message [main standard 14 11 none] [messageIP messages 20 9 none]
+G r l message [main standard 14 11 none] [messageDI messages 20 9 none]
+G r k message [main standard 14 11 none] [messageDF messages 20 9 none]
+G r c none [main standard 14 11 none] [create_user users 7 14 none]
+G r c none [main standard 14 11 none] [create_message messages 8 14 none]
+G r j user [main standard 14 11 none] [userDA users 18 9 none]
+G r j message [main standard 14 11 none] [messageDA messages 20 9 none]
+G r c none [main standard 14 11 none] [getemail users 8 13 none]
+G r c none [main standard 14 11 none] [to_json users 12 13 none]
+G r c none [main standard 14 11 none] [get_id messages 11 13 none]
+G r c none [main standard 14 11 none] [to_json messages 17 13 none]
 X 1 ada.ads
-16K9*Ada 20e8 18|1r6 2r5
-X 14 a-textio.ads
-58K13*Text_IO 725e16 18|1w10 2r9
-506U14*Put_Line 18|15s4 16s4 18s4
-X 18 main.adb
-3U11*Main 3b11 19l5 19t9
-6r4 U{41|5R9} 11m16 14r42 16r22
-7r4 U2{41|5R9} 13m16 14r45
-8r4 M{19|7R9} 14m19 15r25
-X 19 message.ads
-5K9*message 18|1w24 5r14 19|23e12
-7R9*message_type 18|8r7 19|22e14
-9U14*Create_Message 18|14s4
-14V13*JsonMessage{string} 18|15s13
-X 20 system.ads
+16K9*Ada 20e8 26|4r6 4r20 4r45 4r58 5r5 5r19 5r44 5r57 65r52 69r64 86r60
+. 107r60 130r60
+X 2 a-calend.ads
+36K13*Calendar 413e17 26|4w10 4r24 5r9 5r23
+42I9*Time<226I9> 26|28r13
+56V13*Clock{42I9} 26|28s21 69s89 102s49
+226I9 Time_Rep<long_long_integer>
+X 3 a-calfor.ads
+24K22*Formatting 223e28 26|4w33 5r32
+176V13*Image{string} 26|69s83 102s43
+X 11 a-string.ads
+16K13*Strings 35e16 26|4r62 5r61 65r56 69r68 86r64 107r64 130r64
+33n24*Left{33E9} 26|65r64 69r76 86r72 107r72 130r72
+X 12 a-strfix.ads
+43K21*Fixed 1398e22 26|4w70 5r69
+1097V13*Trim{string} 26|65s38 69s50 86s46 107s46 130s46
+X 18 a-textio.ads
+58K13*Text_IO 725e16 26|4w49 5r48
+262U14*New_Line 26|75s4 80s4 83s4 88s4 93s4 96s4 100s4 104s4 109s4 114s4
+. 118s4 121s4 124s4 127s4 132s4 137s4 140s4 143s4
+X 20 controller.ads
+9k9*Controller 26e15 26|10w6 44r35 45r38
+11R9 controller_type 26|46r30[44] 47r33[45]
+16U14 Create 26|73s23[44] 78s26[45] 82s23[45]
+17U14 Read 26|86s23[44] 91s26[45] 95s20[44] 107s23[44] 112s26[45] 130s23[44]
+. 135s26[45]
+18U14 Update 26|99s20[44] 103s23[45] 117s20[44] 120s23[45]
+19U14 Delete 26|123s20[44] 126s23[45] 139s20[44] 142s23[45]
+X 26 main.adb
+14U11*Main 14b11 145l5 145t9
+19V13 user_condition{boolean} 19b13 19>28 19>38 26l8 26t22 44r68
+19r28 E{55|5R9} 21r25
+19a38 K{string} 21r30
+27V13 message_condition{boolean} 27b13 27>31 27>43 35l8 35t25 45r78
+27r31 E{27|6R9} 30r26
+27i43 K{integer} 30r31
+28i7 Now{2|42I9}
+41A9 UserArr(55|5R9)<integer> 44r60
+42A9 MessageArr(27|6R9)<integer> 45r67
+44K12 User_Controller[20|9] 46r14 73r7 86r7 95r4 99r4 107r7 117r4 123r4 130r7
+. 139r4
+45K12 Message_Controller[20|9] 47r14 78r7 82r4 91r7 103r4 112r7 120r4 126r4
+. 135r7 142r4
+46r4 U_Cntrl{20|11R9[44]} 73m30 73r30 86m28 86r28 95m25 95r25 99m27 99r27
+. 107m28 107r28 117m27 117r27 123m27 123r27 130m28 130r28 139m27 139r27
+47r4 M_Cntrl{20|11R9[45]} 78m33 78r33 82m30 82r30 91m31 91r31 103m30 103r30
+. 112m31 112r31 120m30 120r30 126m30 126r30 135m31 135r31 142m30 142r30
+54A9 User_Arr(55|5R9)<integer> 57r11
+55A9 Message_Arr(27|6R9)<integer> 58r11
+57a4 U_Arr{54A9} 64r13 65m19 65r19 69r97 69r107 69r125 72r13 73r39 85r13
+. 102r57 102r67 106r13 117r56 129r13
+58a4 M_Arr{55A9} 68r13 69m22 69r22 77r13 78r42 82r39 90r13 111r13 120r43
+. 134r13
+60r4 U11{55|5R9} 98m16 99r56
+61r4 M11{27|6R9} 102m19 102r19 103r43
+64i8 I{integer} 65r25 65r43 65r95 65r116 65r125
+68i8 I{integer} 69r28 69r32 69r55 69r103 69r116
+72i8 I{integer} 73r45
+77i8 I{integer} 78r48
+85i8 I{integer} 86r51
+90i8 I{integer} 91r40
+106i8 I{integer} 107r51
+111i8 I{integer} 112r40
+129i8 I{integer} 130r51
+134i8 I{integer} 135r40
+X 27 messages.ads
+4K9*Messages 26|10w25 11r12 30r10 45r97 27|28e13
+6R9*Message 26|27r34 42r50 45r49 55r51 61r9 27|27e14
+8U14*Create_Message 26|69s7 102s4
+11V13*Get_ID{integer} 26|30s19
+17V13*To_JSON{string} 26|45r106
+X 28 system.ads
 67M9*Address
-X 26 s-memory.ads
-53V13*Alloc{20|67M9} 103i<c,__gnat_malloc>22
+X 39 s-memory.ads
+53V13*Alloc{28|67M9} 103i<c,__gnat_malloc>22
 68U14*Free 104i<c,__gnat_free>22
-76V13*Realloc{20|67M9} 105i<c,__gnat_realloc>22
-X 33 s-stalib.adb
+76V13*Realloc{28|67M9} 105i<c,__gnat_realloc>22
+X 46 s-stalib.adb
 89U14 Break_Start 90i<c,__gnat_break_start>22
-X 41 user.ads
-4K9*User 18|1w19 5r8 41|24e9
-5R9*user_type 18|6r8 7r9 41|23e14
-7U14*create_user 18|11s4 13s4
-8V13*GetEmail{string} 18|16s13
+X 55 users.ads
+4K9*Users 26|10w18 11r5 21r10 44r84 55|24e10
+5R9*User 26|19r32 41r47 44r46 54r48 60r9 55|23e14
+7U14*create_user 26|65s7 98s4
+8V13*GetEmail{string} 26|21s16
+12V13*To_JSON{string} 26|44r90
 

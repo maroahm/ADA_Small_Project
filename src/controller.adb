@@ -1,7 +1,9 @@
 with Ada.Text_IO;
+use Ada.Text_IO;
 package body Controller is
 
    procedure Create( C: in out controller_type; E: Elem) is
+      success: Boolean;
    begin
       Insert_Elem(C.DB, E, success);
       if success then
