@@ -22,7 +22,7 @@ package body DataBase is
       end loop;
    end Get_Elem;
       
-   procedure Update_Elem(D: database_type; K: Key; E: in out Elem;success: out boolean) is
+   procedure Update_Elem(D: database_type; K: Key; E: in out Elem; success: out boolean) is
    begin
       success := False;
       for I in D.Data'Range loop
@@ -33,7 +33,7 @@ package body DataBase is
       end loop;
    end Update_Elem;
    
-   procedure Delete_Elem(D: in out database_type; K:key;success: out boolean) is 
+   procedure Delete_Elem(D: in out database_type; K:key; success: out boolean) is 
    begin
       success := False;
       for I in D.Data'Range loop

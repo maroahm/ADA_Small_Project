@@ -9,8 +9,8 @@ package DataBase is
    type database_type(Max: Natural) is limited private;
    procedure Insert_Elem(D: in out database_type; E: Elem);
    procedure Get_Elem(D: database_type; K: Key; E: out Elem; success: out boolean);
-   procedure Update_Elem(D: database_type; K: Key; E: in out Elem;success: out boolean);
-   procedure Delete_Elem(D: in out database_type; K:key;success: out boolean);
+   procedure Update_Elem(D: database_type; K: Key; E: in out Elem; success: out boolean);
+   procedure Delete_Elem(D: in out database_type; K:key; success: out boolean);
 private
    type database_type(Max: Natural) is record
       Data: Arr(0..Max);
